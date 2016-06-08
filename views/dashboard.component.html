@@ -1,0 +1,16 @@
+<h3>Top Heroes</h3>
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--4-col" *ngFor="let hero of heroes">
+        <div class="mdl-card" >
+            <div class="mdl-card__title">
+                <h2 class="mdl-card__title-text">{{hero.name}}</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+                Demo Beschreibung Hero
+            </div>
+            <div class="mdl-card__actions" (click)="gotoDetail(hero)">
+                <span>Details</span>
+            </div>
+        </div>
+    </div>
+</div>

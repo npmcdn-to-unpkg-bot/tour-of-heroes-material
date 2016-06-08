@@ -1,0 +1,20 @@
+<div *ngIf="hero">
+    <h2>{{hero.name}} details!</h2>
+    <div>
+        <label>id: </label>{{hero.id}}
+    </div>
+    <div class="mdl-textfield mdl-js-textfield">
+        <input class="mdl-textfield__input" type="text" pattern="[A-Z,a-z,., ]*" id="heroName">
+        <label class="mdl-textfield__label" for="heroName">Name</label>
+        <span class="mdl-textfield__error">Der Name darf keine Zahlen enthalten</span>
+    </div>
+
+    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored"
+            (click)="goBack()">
+        <i class="material-icons">back</i>
+    </button>
+    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored"
+            (click)="save()">
+        <i class="material-icons">save</i>
+    </button>
+</div>
